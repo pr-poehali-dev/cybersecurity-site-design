@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 220 18% 12%;
+    --background: 267 65% 21%;
     --foreground: 0 0% 98%;
 
-    --card: 220 15% 18%;
+    --card: 267 55% 25%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 15% 18%;
+    --popover: 267 55% 25%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 262 83% 58%;
+    --primary: 103 45% 40%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 199 89% 48%;
+    --secondary: 267 65% 30%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 267 45% 30%;
+    --muted-foreground: 0 0% 75%;
 
-    --accent: 25 95% 53%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 103 60% 70%;
+    --accent-foreground: 267 65% 21%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 262 83% 58%;
+    --border: 267 45% 35%;
+    --input: 267 45% 35%;
+    --ring: 103 45% 40%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 220 18% 12%;
+    --sidebar-background: 267 65% 21%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary: 103 45% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent: 267 55% 25%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 262 83% 58%;
+    --sidebar-border: 267 45% 35%;
+    --sidebar-ring: 103 45% 40%;
   }
 }
 
@@ -55,6 +55,7 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: "Inter", sans-serif;
+    background-color: #2d1359;
   }
 
   h1,
@@ -63,23 +64,32 @@
   h4,
   h5,
   h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
   }
 }
 
 @layer utilities {
   .gradient-primary {
-    background: linear-gradient(135deg, #8b5cf6 0%, #0ea5e9 100%);
+    background: linear-gradient(135deg, #519d3c 0%, #6bb450 100%);
   }
 
   .gradient-accent {
-    background: linear-gradient(135deg, #f97316 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #2d1359 0%, #4a2089 100%);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #8b5cf6 0%, #0ea5e9 50%, #f97316 100%);
+    background: linear-gradient(135deg, #519d3c 0%, #7dff6f 50%, #6bb450 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .btn-primary {
+    background-color: #519d3c;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #6bb450;
   }
 }
