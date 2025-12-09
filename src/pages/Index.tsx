@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import ParticlesBackground from '@/components/ParticlesBackground';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -61,7 +62,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#2d1359]">
+    <div className="min-h-screen bg-[#2d1359] relative">
+      <ParticlesBackground />
+      <div className="relative z-10">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#2d1359]/95 backdrop-blur-xl border-b border-white/10">
         <div className="container mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
@@ -331,6 +334,7 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      </div>
     </div>
   );
 };
